@@ -1,7 +1,9 @@
-from django.http import HttpResponse
+from django.shortcuts import render        
+# ↓ Ya no necesitamos HttpResponse
 
 def home(request):
-    return HttpResponse("<h1>Bienvenido a MovieReviews</h1>")
+    return render(request, "movie/home.html")   
 
 def about(request):
-    return HttpResponse("<h1>Acerca de este proyecto</h1>")
+    return render(request, "movie/about.html")  
+

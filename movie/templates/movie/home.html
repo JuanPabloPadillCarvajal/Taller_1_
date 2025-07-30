@@ -1,0 +1,7 @@
+{% extends "movie/base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+  <h1 class="text-primary">Bienvenido a MovieReviews</h1>
+  <p>Esta es la página de inicio.</p>
+  <a href="{% url 'about' %}">Acerca de este proyecto</a>
+{% endblock %}
